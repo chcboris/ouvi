@@ -1,1 +1,30 @@
-<router-outlet></router-outlet>
+<div class="d-flex flex-column min-vh-100">
+
+<!--    <div *ngIf="isLogado()"> -->
+<div>
+      <header>
+        <app-header role="navigation"></app-header>
+      </header>
+
+      <main role="main" aria-label="main">
+        <div class="pt-4 pb-4" class="container-imagem " [ngStyle]=backgroundImage()>
+          <router-outlet></router-outlet>
+        </div>
+      </main>
+
+      <footer class="mt-auto">
+        <app-footer></app-footer>
+      </footer>
+    </div>
+  </div>
+<!--
+  <div *ngIf="!isLogado()" class="fundo" [ngStyle]="backgroundImage()">
+    <main role="main" class="container-fluid padding30" aria-label="main">
+      <div class="pt-4">
+        <app-pg-login></app-pg-login>
+      </div>
+    </main>
+  </div>
+
+</div>
+-->

@@ -1,13 +1,12 @@
 import { NgModule } from '@angular/core';
+import { BrowserModule } from '@angular/platform-browser';
 import { AppComponent } from './app.component';
+import { AppRoutingModule } from './app-routing.module';
 import { SharedModule } from './shared/shared.module';
 import { FormsModule } from '@angular/forms';
 import { HttpClientModule } from '@angular/common/http';
 import { OcorrenciaModule } from './modules/ocorrencia/ocorrencia.module';
-import { AppRoutingModule } from './app-routing.module';
-import { BrowserModule } from '@angular/platform-browser';
-
-
+import { AssuntoModule } from './modules/assunto/assunto.module';
 
 @NgModule({
   declarations: [
@@ -20,6 +19,7 @@ import { BrowserModule } from '@angular/platform-browser';
     SharedModule,
     OcorrenciaModule,
     AppRoutingModule,
+    AssuntoModule
   ],
   bootstrap: [AppComponent]
 })

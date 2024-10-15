@@ -7,16 +7,14 @@ import { PgCadastroOcorrenciaComponent } from './pg-cadastro-ocorrencia/pg-cadas
 
 
 @NgModule({
-  declarations: [
-    PgCadastroOcorrenciaComponent
-  ],
+   declarations: [
+     PgCadastroOcorrenciaComponent
+   ],
   imports: [
     CommonModule,
     FormsModule,
     ReactiveFormsModule,
     SharedModule
-  ],exports:[
-    PgCadastroOcorrenciaComponent
   ]
 })
 export class OcorrenciaModule { }
